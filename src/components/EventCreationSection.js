@@ -41,10 +41,6 @@ const EventCreationSection = () => {
         <p className="text-gray-400 font-medium pt-1 pb-3">Event Options</p>
         <EventOptionsSection />
       </div>
-      <div className="w-full p-4">
-        {/* Image selection and theme options */}
-        <div className="w-full p-4">{/* Your content goes here */}</div>
-      </div>
     </div>
   );
 };
