@@ -9,14 +9,8 @@ import TicketSection from "./TicketSection";
 
 const EventCreationSection = () => {
   const [eventName, setEventName] = useState("");
-  const [multiSession, setMultiSession] = useState(false);
-
   const handleEventNameChange = (e) => {
     setEventName(e.target.value);
-  };
-
-  const handleMultiSessionToggle = () => {
-    setMultiSession(!multiSession);
   };
 
   return (
@@ -36,16 +30,12 @@ const EventCreationSection = () => {
           onBlur={(e) =>
             e.target.classList.remove("text-2xl", "placeholder-current")
           }
-          className="py-4 my-2 text-4xl border-none rounded-md outline-none "
+          className="py-4 my-2 text-4xl font-medium text-gray-500 border-none rounded-md outline-none "
         />
         <DateSection />
         <LocationSection />
-        <TicketSection />
-        <EventOptionsSection
-          multiSession={multiSession}
-          onToggleMultiSession={handleMultiSessionToggle}
-        />
-       
+        <p className="text-gray-400 font-medium pt-1 pb-3">Event Options</p>
+        <EventOptionsSection />
       </div>
       <div className="w-full p-4">
         {/* Image selection and theme options */}
