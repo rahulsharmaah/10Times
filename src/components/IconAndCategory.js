@@ -10,33 +10,32 @@ const IconAndCategory = () => {
     setSelectedCategory(e.target.value);
     setValidationError(""); // Clear validation error when the selection changes
   };
-
-  // const handleSubmit = () => {
-  //   if (!selectedCategory) {
-  //     setValidationError("Please select a category");
-  //     return;
-  //   }
-  //   console.log("Selected Category:", selectedCategory);
-  // };
-
   return (
     <div className="flex items-center mb-4">
       <div className="flex-1">
         <ImageIcon />
       </div>
-      <div className="block px-4">
-        <div className=" px-3 py-1 text-gray-500 font-medium">Create Under</div>
-        <select
-          className="px-2 py-0   text-slate-900 font-medium border border-none rounded-md outline-none w-full"
-          value={selectedCategory}
-          onChange={handleCategoryChange}
+      <div className="flex">
+        <label
+          for="CreateUnder"
+          class="block overflow-hidden rounded-md border border-gray-200 px-1 py-0  border-none rounded-md outline-none "
         >
-          {/* Options for event categories */}
-          <option value="">Select an option</option>
-          <option value="PersonalCalender">Personal Calender</option>
-          <option value="BusinessCalender">Business Calender</option>
-          <option value="SocialCalender">Social Events</option>
-        </select>
+          <span class=" px-3 py-1 text-gray-500 font-medium ">
+            Create Under{" "}
+          </span>
+
+          <select
+            id="CreateUnder"
+            className="px-2 py-0 text-slate-900 font-medium border border-none rounded-md outline-none w-full mb-2"
+            value={selectedCategory}
+            onChange={handleCategoryChange}
+          >
+            <option value="PersonalCalender">Personal Calendar</option>
+            <option value="BusinessCalender">Business Calendar</option>
+            <option value="SocialCalender">Social Events</option>
+          </select>
+        </label>
+
         {/* Validation message */}
         {validationError && (
           <div className="text-red-500 mt-2">{validationError}</div>

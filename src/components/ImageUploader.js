@@ -41,8 +41,8 @@ const ImageUploader = () => {
           </div>
         </>
       ) : (
-        <div className="w-full h-full flex items-center justify-center bg-gradient-to-r from-purple-400 md:from-yellow-400">
-          <h1 className="text-gray-800 text-8xl text-center font-semibold">
+        <div className="w-full h-full flex items-center justify-center bg-gradient-to-r from-orange-400 to-amber-400">
+          <h1 className="text-gray-800 text-8xl sm:text-4xl text-center font-semibold">
             You are invited
           </h1>
           <div className="absolute bottom-0 right-0 cursor-pointer p-2 bg-slate-800 rounded-md">
