@@ -5,7 +5,7 @@ import { TicketIcon } from "./TicketIcon";
 import { ChevronUpDownIcon } from "@heroicons/react/20/solid";
 
 const EventOptionsSection = () => (
-  <div className="mb-4 bg-gray-100 text-gray-500 border rounded-lg font-medium p-2">
+  <div className="mb-4 bg-gray-50 text-gray-500 border rounded-lg font-medium p-2">
     <div className="flex items-center mb-2 border-b-2 pb-1">
       <div>
         <TicketIcon />

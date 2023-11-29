@@ -41,7 +41,7 @@ const DateSection = () => {
       </div>
 
       {/* Start Date and End Date */}
-      <div className="flex flex-col items-center mt-2 border m-2 px-4 py-4 rounded-md bg-gray-100">
+      <div className="flex flex-col items-center mt-2 border m-2 px-4 py-4 rounded-md bg-gray-50">
         <div className="flex items-center mb-2 gap-1">
           <div className="text-lg flex-1 font-medium text-gray-800">Start</div>
 
@@ -51,7 +51,7 @@ const DateSection = () => {
               selected={startDate}
               onChange={handleStartDateChange}
               dateFormat="MM/dd"
-              className="px-2 py-2 text-gray border rounded-md bg-gray-200 w-full"
+              className="px-2 py-2 text-gray border rounded-md bg-gray-100 w-full"
             />
           </div>
 
@@ -60,7 +60,7 @@ const DateSection = () => {
             <TimePicker
               value={startTime}
               onChange={(time) => setStartTime(time)}
-              className="h-10 py-2 text-gray border rounded-md bg-gray-200 w-full"
+              className="h-10 py-2 text-gray border rounded-md bg-gray-100 w-full"
               clearIcon={false}
               disableClock="true"
             />
@@ -76,7 +76,7 @@ const DateSection = () => {
               selected={endDate}
               onChange={handleEndDateChange}
               dateFormat="MM/dd"
-              className="px-2 py-2 text-gray-800 border rounded-md bg-gray-200 w-full"
+              className="px-2 py-2 text-gray-800 border rounded-md bg-gray-100 w-full"
             />
           </div>
 
@@ -85,7 +85,7 @@ const DateSection = () => {
             <TimePicker
               value={endTime}
               onChange={(time) => setEndTime(time)}
-              className="text-gray-800 justify-center h-10 py-2 align-middle border-none rounded-md bg-gray-200 time-picker-container w-full"
+              className="text-gray-800 justify-center h-10 py-2 align-middle border-none rounded-md bg-gray-100 time-picker-container w-full"
               clearIcon={false}
               onFocus={() => setEndTime("00:00")}
               disableClock="true"

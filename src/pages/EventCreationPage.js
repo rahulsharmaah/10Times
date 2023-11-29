@@ -7,7 +7,7 @@ function EventCreationPage() {
   return (
     <>
       <PageHeader title="Create Event" />
-      <div className="flex flex-col bg-gray-100 px-14 py-8 ml-40 mr-40  mt-10 mb-20  sm:ml-0-mr-0 ">
+      <div className="flex flex-col bg-gray-50 px-14 py-8 ml-40 mr-40  mt-10 mb-20  sm:ml-0-mr-0 ">
         {/* Header at the top */}
         <Header />
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 bg-white py-4 px-4 border rounded-lg">

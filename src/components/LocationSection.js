@@ -33,7 +33,7 @@ const LocationSection = () => {
       <input
         type="text"
         placeholder="Add Event Location"
-        className="w-full p-2 m-2  bg-gray-100 border font-medium text-gray-700 rounded-md border-none rounded-md outline-none"
+        className="w-full p-2 m-2  bg-gray-50 border font-medium text-gray-700 rounded-md border-none rounded-md outline-none"
         value={Location}
         onChange={handleLocationChange}
         onClick={(e) =>
