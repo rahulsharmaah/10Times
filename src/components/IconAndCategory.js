@@ -1,4 +1,3 @@
-// IconAndCategory.js
 import React, { useState } from "react";
 import { ImageIcon } from "./ImageIcon";
 
@@ -8,7 +7,7 @@ const IconAndCategory = () => {
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
-    setValidationError(""); // Clear validation error when the selection changes
+    setValidationError(""); 
   };
   return (
     <div className="flex items-center mb-4">
@@ -18,7 +17,7 @@ const IconAndCategory = () => {
       <div className="flex">
         <label
           for="CreateUnder"
-          class="block overflow-hidden rounded-md border border-gray-200 px-1 py-0  border-none rounded-md outline-none "
+          class="block overflow-hidden border border-gray-200 px-1 py-0  border-none rounded-md outline-none "
         >
           <span class=" px-3 py-1 text-gray-500 font-medium ">
             Create Under{" "}
@@ -35,7 +34,6 @@ const IconAndCategory = () => {
             <option value="SocialCalender">Social Events</option>
           </select>
         </label>
-
         {/* Validation message */}
         {validationError && (
           <div className="text-red-500 mt-2">{validationError}</div>
