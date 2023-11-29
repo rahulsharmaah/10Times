@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../components/Header";
 import EventCreationSection from "../components/EventCreationSection";
 import { PageHeader } from "../components/PageHeader";
+import ImageUploader from "../components/ImageUploader";
 function EventCreationPage() {
   return (
     <>
@@ -15,7 +16,7 @@ function EventCreationPage() {
             <EventCreationSection />
           </div>
           <div className="flex-1 p-4">
-            Your content for the second div goes here
+            <ImageUploader/>
           </div>
           <div className=" flex-col w-auto flex-wrap p-4">
             <button
