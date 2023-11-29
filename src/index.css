@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .react-time-picker__wrapper {
-  @apply border-none;
+  @apply border-none !important;
 }
