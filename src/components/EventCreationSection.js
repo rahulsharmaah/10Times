@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import DateSection from "./DateSection";
 import LocationSection from "./LocationSection";
 import EventOptionsSection from "./EventOptionsSection";
-import TicketSection from "./TicketSection";
 // import BgChanger from "./BgChanger";
 
 const EventCreationSection = () => {
