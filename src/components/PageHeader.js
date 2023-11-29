@@ -21,7 +21,7 @@ export const PageHeader = () => {
               className="block rounded-lg bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
               type="button"
             >
-              Create Event
+              Create Events
             </button>
           </div>
         </div>
