@@ -1,11 +1,11 @@
 // EventCreationSection.js
 import React, { useState } from "react";
-import IconAndCategory from "./IconAndCategory";
+// import IconAndCategory from "./IconAndCategory";
 import DateSection from "./DateSection";
 import LocationSection from "./LocationSection";
 import EventOptionsSection from "./EventOptionsSection";
 import TicketSection from "./TicketSection";
-import BgChanger from "./BgChanger";
+// import BgChanger from "./BgChanger";
 
 const EventCreationSection = () => {
   const [eventName, setEventName] = useState("");

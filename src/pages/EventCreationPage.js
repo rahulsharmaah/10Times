@@ -2,7 +2,7 @@
 import React from "react";
 import Header from "../components/Header";
 import EventCreationSection from "../components/EventCreationSection";
-import BgChanger from "../components/BgChanger";
+// import BgChanger from "../components/BgChanger";
 // import IconAndCategory from "../components/IconAndCategory";
 // import LocationSection from "../components/LocationSection";
 // import DateSection from "../components/DateSection";
