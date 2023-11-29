@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// ... (other imports)
-
 const ThemeSelector = ({ onThemeChange }) => {
   const themes = [
     { name: "Abstract", color: "bg-gray-100", font: "font-sans" },
@@ -26,7 +24,6 @@ const ThemeSelector = ({ onThemeChange }) => {
 
   const handleThemeSelection = (index) => {
     setIsLoading(true);
-    // Simulate loading delay (you can replace this with actual async logic)
     setTimeout(() => {
       setSelectedThemeIndex(index);
       onThemeChange(themes[index].color);
