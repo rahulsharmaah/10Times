@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import DateSection from "./DateSection";
 import LocationSection from "./LocationSection";
 import EventOptionsSection from "./EventOptionsSection";
+import IconAndCategory from "./IconAndCategory";
 // import BgChanger from "./BgChanger";
 
 const EventCreationSection = () => {
@@ -14,6 +15,10 @@ const EventCreationSection = () => {
 
   return (
     <div className="flex flex-col bg-white">
+     <div className="flex">
+       <IconAndCategory />
+     </div>
+
       <div className="flex p-1 flex-col">
         <input
           type="text"
@@ -29,7 +34,7 @@ const EventCreationSection = () => {
           onBlur={(e) =>
             e.target.classList.remove("text-2xl", "placeholder-current")
           }
-          className="py-4 my-2 text-4xl font-medium text-gray-500 border-none rounded-md outline-none "
+          className="py-4 my-2 text-4xl font-medium text-gray-700 border-none rounded-md outline-none "
         />
         <DateSection />
         <LocationSection />

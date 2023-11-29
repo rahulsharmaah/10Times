@@ -31,7 +31,7 @@ const DateSection = () => {
   return (
     <div className="flex flex-row">
       {/* Selected Month and Date */}
-      <div className="flex flex-col items-center mt-2 rounded">
+      <div className="flex flex-col items-center mt-2 rounded-lg">
         <div className="flex flex-col items-center align-top justify-start border rounded-lg">
           <p className="bg-gray-500 text-white text-center p-2">
             {selectedMonth}
