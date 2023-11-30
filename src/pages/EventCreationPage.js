@@ -5,6 +5,7 @@ import { PageHeader } from "../components/PageHeader";
 import ImageUploader from "../components/ImageUploader";
 import ColorAndTypefaceSelector from "../components/ColorAndTypefaceSelector";
 import ThemeSelector from "../components/ThemeSelector";
+import { Footer } from "../components/Footer";
 
 function EventCreationPage() {
   const [theme, setTheme] = useState(null);
@@ -37,6 +38,7 @@ function EventCreationPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

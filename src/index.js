@@ -17,8 +17,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     // <Route path="/" element={<Layout />}>
     <Route>
-      <Route path="/" element={<EventCreationPage />}/>
-      <Route path="/events-listing" element={<EventCreationPage />} />
+      <Route path="/" element={<EventCreationPage />} />
     </Route>
   )
 );

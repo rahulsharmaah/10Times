@@ -68,10 +68,8 @@ const DateSection = () => {
             />
           </div>
         </div>
-
         <div className="flex flex-col sm:flex-row items-center gap-1">
           <div className="text-lg sm:flex-1 font-medium text-gray-800">End</div>
-
           {/* Date Picker Container */}
           <div className="sm:flex-1 items-center justify-start pr-4">
             <DatePicker
