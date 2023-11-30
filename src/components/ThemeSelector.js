@@ -32,7 +32,7 @@ const ThemeSelector = ({ onThemeChange }) => {
   };
 
   return (
-    <div className="mt-4">
+    <div className="mt-4 mb-4">
       <h2 className="text-lg font-medium text-gray-400 mb-2">Select Theme</h2>
       <div className="flex w-full flex-wrap gap-4">
         {themes.map((theme, index) => (
@@ -66,11 +66,11 @@ const ThemeSelector = ({ onThemeChange }) => {
           Loading...
         </div>
       )}
-      <div
+      {/* <div
         className={`mt-2 ${themes[selectedThemeIndex].color} p-2 rounded-md ${themes[selectedThemeIndex].font}`}
       >
         <p className="text-white">Theme Preview</p>
-      </div>
+      </div> */}
     </div>
   );
 };
