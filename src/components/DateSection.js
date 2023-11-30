@@ -62,7 +62,7 @@ const DateSection = () => {
             <TimePicker
               value={startTime}
               onChange={(time) => setStartTime(time)}
-              className="h-10 py-2 text-gray border rounded-md bg-gray-100 w-full"
+              className="text-gray-800 justify-center h-10 py-2 align-middle border-none rounded-md bg-gray-100 time-picker-container w-full"
               clearIcon={false}
               disableClock="true"
             />
