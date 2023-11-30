@@ -12,7 +12,7 @@ const IconAndCategory = () => {
   return (
     <div className="flex items-center mb-4">
       <div className="flex-1">
-        <ImageIcon />
+      ☺️
       </div>
       <div className="flex">
         <label
