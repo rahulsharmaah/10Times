@@ -22,7 +22,7 @@ const DateSection = () => {
   const handleEndDateChange = (date) => {
     if (date >= startDate) {
       setEndDate(date);
-      setValidationError(""); // Clear validation error when end date changes
+      setValidationError(""); 
     } else {
       setValidationError("End date cannot be earlier than start date");
     }
@@ -97,7 +97,7 @@ const DateSection = () => {
           <div className="text-red-500 mt-2">{validationError}</div>
         )}
         <div className="flex items-center gap-3 py-3 border-b-2">
-          <div className="h-6 w-6 rounded-full font-medium text-slate-800 text-gray-500">
+          <div className="h-6 w-6 rounded-full font-medium text-gray-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -117,7 +117,7 @@ const DateSection = () => {
           </div>
         </div>
         <div className="flex items-center gap-3 py-3 border-b-2">
-          <div className="h-6 w-6 rounded-full font-medium text-slate-800 text-gray-500">
+          <div className="h-6 w-6 rounded-full font-medium text-gray-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
