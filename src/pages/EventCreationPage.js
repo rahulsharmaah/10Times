@@ -3,8 +3,8 @@ import Header from "../components/Header";
 import EventCreationSection from "../components/EventCreationSection";
 import { PageHeader } from "../components/PageHeader";
 import ImageUploader from "../components/ImageUploader";
-import ThemeSelector from "../components/ThemeSelector";
 import ColorAndTypefaceSelector from "../components/ColorAndTypefaceSelector";
+import ThemeSelector from "../components/ThemeSelector";
 
 function EventCreationPage() {
   const [theme, setTheme] = useState(null);
@@ -13,7 +13,7 @@ function EventCreationPage() {
     setTheme(selectedTheme);
   };
 
-  const containerClasses = `flex flex-col bg-gray-50 px-14 py-8 ml-40 mr-40 mt-10 mb-20 sm:ml-0-mr-0 ${theme}`;
+  const containerClasses = `flex flex-col bg-gray-50 px-4 py-4 sm:px-14 sm:py-8 ml-0 mr-0 mt-6 sm:mt-10 sm:mb-20 ${theme}`;
 
   return (
     <>
@@ -30,8 +30,8 @@ function EventCreationPage() {
             <ThemeSelector onThemeChange={handleThemeChange} />
             <ColorAndTypefaceSelector />
           </div>
-          <div className="flex-col w-auto flex-wrap p-1">
-            <button className="bg-slate-900 text-white p-2 rounded-md" style={{ width: "100%" }}>
+          <div className="flex-col w-full p-1">
+            <button className="bg-slate-900 text-white p-3 rounded-md w-full">
               Create Event
             </button>
           </div>
