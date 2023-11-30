@@ -22,14 +22,14 @@ const DateSection = () => {
   const handleEndDateChange = (date) => {
     if (date >= startDate) {
       setEndDate(date);
-      setValidationError(""); 
+      setValidationError("");
     } else {
       setValidationError("End date cannot be earlier than start date");
     }
   };
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-col sm:flex-row items-center sm:items-start">
       {/* Selected Month and Date */}
       <div className="flex flex-col items-center mt-2 rounded-lg">
         <div className="flex flex-col items-center align-top justify-start border rounded-lg">
@@ -41,12 +41,14 @@ const DateSection = () => {
       </div>
 
       {/* Start Date and End Date */}
-      <div className="flex flex-col mt-2 border m-2 px-4 py-4 rounded-md bg-gray-50">
-        <div className="flex items-center mb-2 gap-1">
-          <div className="text-lg flex-1 font-medium text-gray-800">Start</div>
+      <div className="flex flex-col mt-2 border m-2 px-4 py-4 rounded-md bg-gray-50 sm:w-full">
+        <div className="flex flex-col sm:flex-row items-center mb-2 gap-1">
+          <div className="text-lg sm:flex-1 font-medium text-gray-800">
+            Start
+          </div>
 
           {/* Date Picker Container */}
-          <div className="flex-1 items-center pr-4">
+          <div className="sm:flex-1 sm:items-center pr-4">
             <DatePicker
               selected={startDate}
               onChange={handleStartDateChange}
@@ -56,7 +58,7 @@ const DateSection = () => {
           </div>
 
           {/* Time Picker Container */}
-          <div className="flex-1 items-center">
+          <div className="sm:flex-1 items-center">
             <TimePicker
               value={startTime}
               onChange={(time) => setStartTime(time)}
@@ -67,11 +69,11 @@ const DateSection = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-1 ">
-          <div className="flex-1 text-lg font-medium text-gray-800">End</div>
+        <div className="flex flex-col sm:flex-row items-center gap-1">
+          <div className="text-lg sm:flex-1 font-medium text-gray-800">End</div>
 
           {/* Date Picker Container */}
-          <div className="flex-1 items-center justify-start pr-4">
+          <div className="sm:flex-1 items-center justify-start pr-4">
             <DatePicker
               selected={endDate}
               onChange={handleEndDateChange}
@@ -81,7 +83,7 @@ const DateSection = () => {
           </div>
 
           {/* Time Picker Container */}
-          <div className="flex-1 items-center justify-center">
+          <div className="sm:flex-1 items-center justify-center">
             <TimePicker
               value={endTime}
               onChange={(time) => setEndTime(time)}
